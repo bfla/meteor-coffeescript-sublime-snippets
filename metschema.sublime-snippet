@@ -1,0 +1,17 @@
+<snippet>
+  <content>
+    _schema = new SimpleSchema
+      ${2: name:}
+      createdAt:
+        type: Date
+        defaultValue: new Date()
+      updatedAt:
+        type: Date
+        autoValue: -> new Date()
+    ${1: COLLECTION}.attachSchema(_schema)
+  </content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>metschema</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.coffee</scope>
+</snippet>

@@ -1,0 +1,27 @@
+<snippet>
+  <content><![CDATA[
+@${1:MyClass} = React.createClass
+  mixins: [ReactMeteorData, SpinnerMixin]
+
+  # propTypes:
+    # foo: React.PropTypes.object.isRequired
+
+  # getMeteorData: ->
+    # subs = [Meteor.subscribe('foo')]
+    # data =
+      # subscriptions: subs
+      # foo: Foo.find()
+    # return data 
+
+  render: ->
+    return (
+      <div className=''>
+        ${2: end}
+      </div>
+    )
+  ]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>metreact</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.coffee</scope>
+</snippet>

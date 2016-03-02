@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+${1:COLLECTION}.allow
+  insert: (userId, doc) -> ${2:return false}
+  update: (userId, doc, fieldNames, mod) -> return false
+  remove: (userId, doc) -> return false
+
+# ${1}.deny
+  # insert: (userId, doc) -> return true
+  # update: (userId, doc) -> return true
+  # remove: (userId, doc) -> return true
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>metallow</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.coffee</scope>
+</snippet>
