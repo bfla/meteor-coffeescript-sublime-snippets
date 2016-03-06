@@ -4,9 +4,9 @@ ${1:MyController} = (${2:\$scope, \$reactive, \$meteor}) ->
   \$reactive(@).attach(\$scope)
   ${4:#do something}
 
-  # helpers(
-    #myColl: -> return
-  #)
+  #  @helpers(
+    #  myColl: -> return
+  #  )
 
 angular
   .module('${3:myApp}')
