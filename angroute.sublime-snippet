@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+.state('${1:my-action}',
+  url: '/${2:$1}'
+  templateUrl: 'client/components/${3:DIR}/$1.html'
+  controller: '${4:fooCtrl} as ${5:foo}'
+)
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>angroute</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.coffee</scope>
+</snippet>
