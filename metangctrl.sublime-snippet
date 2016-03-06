@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[
+${1:MyController} = (${2:\$scope, \$reactive, \$meteor}) ->
+  \$reactive(@).attach(\$scope)
+  ${4:#do something}
+
+  # helpers(
+    #myColl: -> return
+  #)
+
+angular
+  .module('${3:myApp}')
+  .controller('$1', $1)
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>metangctrl</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.coffee</scope>
+</snippet>
